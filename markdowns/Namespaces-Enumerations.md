@@ -1,5 +1,11 @@
 # Namespaces
-- https://docs.microsoft.com/en-us/cpp/cpp/namespaces-cpp?view=msvc-160
+
+## External Resources
+
+- Namespaces in C++: [https://docs.microsoft.com/en-us/cpp/cpp/namespaces-cpp?view=msvc-160](https://docs.microsoft.com/en-us/cpp/cpp/namespaces-cpp?view=msvc-160)
+
+## What is a namespace?
+
 - a declarative region that provides a scope to the intentifiers (variables, constants, functions, etc.)
 - used to organize code into logical groups to prevent name collisions that can occur especially when your code base includes multiple libraries
 - we've used C++ builtin `std namespace` in the previous chapters, e.g.
@@ -40,6 +46,7 @@ namespace MY_SPACE {
     2. use a `using` declaration to bring each identifier into current scope
     3. use a `using` directive to bring everything in the namespace into current scope
         - as we've done with `using namespace std;`
+- first two methods are preferred and are best practice to avoid name collisions
 
 
 ```c++
@@ -53,14 +60,14 @@ float area = MY_SPACE::PI*4*4; // #1
 cout << PI;
 ```
 
-    [1minput_line_11:3:9: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'PI'; did you mean 'MY_SPACE::PI'?[0m
+    input_line_11:3:9: error: use of undeclared identifier 'PI'; did you mean 'MY_SPACE::PI'?
     cout << PI;
-    [0;1;32m        ^~
-    [0m[0;32m        MY_SPACE::PI
-    [0m[1minput_line_9:2:17: [0m[0;1;30mnote: [0m'MY_SPACE::PI' declared here[0m
+            ^~
+            MY_SPACE::PI
+    input_line_9:2:17: note: 'MY_SPACE::PI' declared here
         const float PI = 3.14156;
-    [0;1;32m                ^
-    [0m
+                    ^
+
 
 
     Interpreter Error: 
@@ -171,14 +178,14 @@ COLOR my_favColor = RED;
 
 
 ```c++
-// try assigning integer value
+// let's see what happens if we try assigning integer value
 COLOR some_color = 0;
 ```
 
-    [1minput_line_15:3:7: [0m[0;1;31merror: [0m[1mcannot initialize a variable of type 'COLOR' with an rvalue of type 'int'[0m
+    input_line_27:3:7: error: cannot initialize a variable of type 'COLOR' with an rvalue of type 'int'
     COLOR some_color = 0;
-    [0;1;32m      ^            ~
-    [0m
+          ^            ~
+
 
 
     Interpreter Error: 
@@ -236,8 +243,3 @@ switch(my_favColor) {
 # Applications and Exercises
 - namespaces and enumeration types are cruical in large-scale software development using C++
 - use these concepts as much as possible to learn and be familiar with them
-
-
-```c++
-
-```

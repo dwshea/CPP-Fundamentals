@@ -1,13 +1,29 @@
-# Kattis (https://open.kattis.com)
+# Problem Banks and Online Judges
+
+- there are many online judges and problem banks that provide a wide variety of programming problems to practice and hone your programming and problem solving skills
+- some of the popular ones are:
+    - Kattis [https://open.kattis.com](https://open.kattis.com)
+    - Codeforces [https://codeforces.com](https://codeforces.com)
+    - LeetCode [https://leetcode.com](https://leetcode.com)
+    - HackerRank [https://www.hackerrank.com](https://www.hackerrank.com)
+    - AtCoder [https://atcoder.jp](https://atcoder.jp)
+    - CodeChef [https://www.codechef.com](https://www.codechef.com)
+    - Sphere Online Judge [https://www.spoj.com](https://www.spoj.com)
+    - UVa Online Judge (https://onlinejudge.org)
+- among these, Kattis is widely used in competitive programming contests such as ICPC and is a great resource to learn programming and problem solving skills
+- businesses also use these online judges to screen potential candidates for programming jobs
+- professionals use these online judges to practice for job interviews and keep their programming skills sharp
+
+## Kattis [https://open.kattis.com](https://open.kattis.com)
 
 - throughout these notebooks, you'll find Kattis problems listed under each chapter where appropriate
-- Kattis is a free problem bank and online judge that is widely used in [International Collegiate Programming Contest (ICPC)](https://icpc.global/) around the world
+- Kattis is a free problem bank and online judge that is widely used in International Collegiate Programming Contest (ICPC) [https://icpc.global/](https://icpc.global/) around the world
 - Kattis is a great tool to learn various programming languages while solving myriad of intuitive algorithmic problems and developing problem solving skills that are sought after by many potential employers
-- research (https://rambasnet.github.io/pdfs/kattis.pdf) has shown that by introducing and assigning Kattis problems motivates students to continuously use Kattis and solve more problems there by becoming an effective problem solver -- a hallmark skill of computer scientist
-- here's a repository of some sample solutions provided in various languages with automated test cases: https://github.com/rambasnet/KattisDemos
+- research [https://rambasnet.github.io/pdfs/kattis.pdf](https://rambasnet.github.io/pdfs/kattis.pdf) has shown that by introducing and assigning Kattis problems motivates students to continuously use Kattis and solve more problems there by becoming an effective problem solver -- a hallmark skill of computer scientist
+- here's a repository of some sample solutions provided in various languages with automated test cases: [https://github.com/rambasnet/KattisDemos](https://github.com/rambasnet/KattisDemos)
     - eventually (by Chapter 7), you'll be able to understand and use the all the programming concepts used in those demo solutions
-- use Kattis provided help to get your started: https://open.kattis.com/help
-- you must create a free acount here: https://open.kattis.com/login to be able to submit your solution so the Kattis can judge it providing you the verdict
+- use Kattis provided help to get your started: [https://open.kattis.com/help](https://open.kattis.com/help)
+- you must create a free acount here: [https://open.kattis.com/login](https://open.kattis.com/login) to be able to submit your solution so the Kattis can judge it providing you the verdict
 
 
 ### Testing Kattis provided samples
@@ -17,11 +33,11 @@
 
 ## Using Kattis-CLI tool
 - Kattis provides a command line tool to download problems, test your solution against sample test cases, and submit your solution directly from the terminal
-- Setup kattis-cli for the Lab Codespace by clicking on and following [https://coloradomesa365-my.sharepoint.com/:w:/g/personal/rbasnet_coloradomesa_edu/ESYiqurabGZJrIKmpCT4FnEBcw25QfcGjk_HK5PnRYbveA?e=xVLbe9](https://coloradomesa365-my.sharepoint.com/:w:/g/personal/rbasnet_coloradomesa_edu/ESYiqurabGZJrIKmpCT4FnEBcw25QfcGjk_HK5PnRYbveA?e=xVLbe9)
+- Setup kattis-cli for the Lab Codespace by clicking on and following [https://github.com/rambasnet/kattis-cli/blob/main/SETUP.md](https://github.com/rambasnet/kattis-cli/blob/main/SETUP.md)
 
 ### Download problem sample data and metadata
 - you neeed problem id to download the problem samples and metadata
-    - problem id can be found in the URL of the problem page, e.g. for https://open.kattis.com/problems/carrots, the problem id is `carrots`
+    - problem id can be found in the URL of the problem page, e.g. for https://open.kattis.com/problems/carrots, the problem id is `carrots` the part after `/problems/`
 - kattis-cli will create a folder with the problem id name and download all the sample input and output files along with problem metadata inside that folder
 - steps to download and test Kattis problems using kattis-cli:
 
@@ -88,6 +104,3 @@ kattis test
 - Kattis will either accept your solution or reject with some simple feedback such as wrong answer
 
 
-```c++
-
-```

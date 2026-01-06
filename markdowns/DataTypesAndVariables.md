@@ -1,4 +1,4 @@
-# Data, Types and Variables
+# Data, Types, and Variables
 
 ## Topics
 - data and values
@@ -10,6 +10,10 @@
 - operators for numbers and strings
 - constants
 - type casting
+
+## External Resources
+- Variables and Data Types in C++: [https://cplusplus.com/doc/tutorial/variables/](https://cplusplus.com/doc/tutorial/variables/)
+- C++ Data Types: [https://en.cppreference.com/w/cpp/language/types](https://en.cppreference.com/w/cpp/language/types)
 
 ## Data and values
 - data and values are the fundamentals to any computer language and program
@@ -33,7 +37,7 @@
 ## C++ Fundamental Types
 - there are many fundamental types based on the size of the data program needs to store
     - most fundamental types are numeric types
-- see here for all the supported types: https://en.cppreference.com/w/cpp/language/types
+- see here for all the supported types: [https://en.cppreference.com/w/cpp/language/types](https://en.cppreference.com/w/cpp/language/types)
 - the most common types we use are:
 
 | Type | Description | Storage size | Value range |
@@ -54,7 +58,7 @@
 - two common ways to store string data:
     - use C-string or array of characters
     - use basic_string defined in `<string>` library
-        - more on basic_string: https://en.cppreference.com/w/cpp/string/basic_string
+        - more on basic_string: [https://en.cppreference.com/w/cpp/string/basic_string](https://en.cppreference.com/w/cpp/string/basic_string)
         - must include `<string>` library and **std** namespace
 - we'll dive into string more in depth in **Strings** chapter
    
@@ -65,7 +69,7 @@
 - let's check the size of some fundamental types on my 64-bit MacBook Pro laptop
 
 
-```c++
+```C++17
 sizeof(bool)
 ```
 
@@ -77,7 +81,7 @@ sizeof(bool)
 
 
 
-```c++
+```C++17
 sizeof(char)
 ```
 
@@ -89,7 +93,7 @@ sizeof(char)
 
 
 
-```c++
+```C++17
 sizeof(int)
 ```
 
@@ -101,7 +105,7 @@ sizeof(int)
 
 
 
-```c++
+```C++17
 sizeof(long)
 ```
 
@@ -113,7 +117,7 @@ sizeof(long)
 
 
 
-```c++
+```C++17
 sizeof(float)
 ```
 
@@ -125,7 +129,7 @@ sizeof(float)
 
 
 
-```c++
+```C++17
 sizeof(double)
 ```
 
@@ -302,7 +306,7 @@ type varName;
 type varNam1, varName2, ...; //declare several variables all of the same type
 ```
 
-![](resources/VariablesAndMemory.png)
+![](assets/VariablesAndMemory.png)
 
 ### Rules for creating variables
 - variable names are case sensitive
@@ -323,10 +327,10 @@ type varNam1, varName2, ...; //declare several variables all of the same type
 - keywords are reserved names and words that have specific purpose in C++
     - they can only be used what they're intended for
 - e.g., char, int, unsigned, signed, float, double, bool, if, for, while, return, struct, class, operator, try, etc.
-- all C++ keywords are listed here: https://en.cppreference.com/w/cpp/keyword
+- all C++ keywords are listed here: [https://en.cppreference.com/w/cpp/keyword](https://en.cppreference.com/w/cpp/keyword)
 
 
-```c++
+```C++17
 // examples of variable declaration
 bool done;
 char middleInitial;
@@ -341,7 +345,7 @@ double space_shuttle_velocity;
 ```
 
 
-```c++
+```C++17
 // TODO:
 // Declare 10 variables of atleast 5 different types
 ```
@@ -357,7 +361,7 @@ double space_shuttle_velocity;
 - the following are some examples of string variables
 
 
-```c++
+```C++17
 // string variables
 #include <string>
 
@@ -372,7 +376,7 @@ std::string state_code; // :: name resolution operator
 ```
 
 
-```c++
+```C++17
 // TODO:
 // Declare 5 string variables
 ```
@@ -389,7 +393,7 @@ varName = value;
     - strongly typed languages enforces type safety and matching during the compile time
 
 
-```c++
+```C++17
 // assignment examples
 done = false;
 middleInitial = 'J'; // character is represent using single quote
@@ -411,7 +415,7 @@ space_shuttle_velocity = 950.1234567891234567; // 16 decimal points
 
 
 
-```c++
+```C++17
 // string assignment examples
 fullName = "John Doe";
 firstName = "John";
@@ -422,7 +426,7 @@ state_code = "CO";
 ```
 
 
-```c++
+```C++17
 // TODO: assign different values to variables defined above
 ```
 
@@ -438,7 +442,7 @@ state_code = "CO";
         - useful in initializing advanced types such as arrays, objects, etc.
 
 
-```c++
+```C++17
 // Copy initialization
 float price = 2.99f;
 char MI = 'B'; //middle initial
@@ -446,7 +450,7 @@ string school_name = "Grand Junction High";
 ```
 
 
-```c++
+```C++17
 // Value/uniform initialization
 char some_letter{'U'};
 int some_length{100};
@@ -461,7 +465,7 @@ string some_string = {"Hello World!"}; // can also combine the two!
 - C++ is a strongly and static typed programming language!
 
 
-```c++
+```C++17
 price = 3.99;
 price = 1.99;
 MI = 'Q';
@@ -470,7 +474,7 @@ some_string = "Goodbye, World!";
 ```
 
 
-```c++
+```C++17
 price = "4.99"; // is this valid?
 ```
 
@@ -487,7 +491,7 @@ price = "4.99"; // is this valid?
 - if variable is declared and initialized in one statement, you can use **auto** keyword to let compiler determine type of variable based on the value it's initialized with
 
 
-```c++
+```C++17
 auto var1 = 10; // integer
 auto var2 = 19.99f; // float
 auto var3 = 99.245; // double
@@ -495,13 +499,13 @@ auto var4 = '@'; // char
 ```
 
 
-```c++
+```C++17
 // char * (pointer) type and not string type
 auto full_name = "John Doe";
 ```
 
 
-```c++
+```C++17
 // can automatically declare string type
 #include <string>
 using namespace std;
@@ -510,14 +514,14 @@ auto full_name1 = string("Jake Smith"); // string type!
 ```
 
 
-```c++
+```C++17
 // use typeid function to find the name of the types
 // typeid is defined in typeinfo library
 #include <typeinfo>
 ```
 
 
-```c++
+```C++17
 typeid(full_name1).name()
 ```
 
@@ -529,7 +533,7 @@ typeid(full_name1).name()
 
 
 
-```c++
+```C++17
 // should print "i" -> short for integer
 // Note: may also print invalid memory address in Jupyter notebook!
 typeid(var1).name()
@@ -562,13 +566,13 @@ typeid(var1).name()
         - after an identifier has been defined with a value, preprocessor replaces each occurances of PI with value
 
 
-```c++
+```C++17
 const double pi = 22/7.0; // evaluate 22/7.0 and use it as the const value for pi
 const float earth_gravity = 9.8; // m/s^2 unit
 ```
 
 
-```c++
+```C++17
 // try to assign different value to the constant pi
 pi = 3.141592653589793238;
 ```
@@ -601,7 +605,7 @@ pi = 3.141592653589793238;
     - \\" - double quote
 
 
-```c++
+```C++17
 // string variables
 #include <iostream>
 #include <string>
@@ -610,12 +614,12 @@ using namespace std;
 ```
 
 
-```c++
+```C++17
 string greeting = "What's up\n Shaq\tO'Neal?"
 ```
 
 
-```c++
+```C++17
 greeting
 ```
 
@@ -628,12 +632,12 @@ greeting
 
 
 
-```c++
+```C++17
 char single_quote = '\''
 ```
 
 
-```c++
+```C++17
 single_quote
 ```
 
@@ -645,12 +649,12 @@ single_quote
 
 
 
-```c++
+```C++17
 char double_quote = '"'
 ```
 
 
-```c++
+```C++17
 double_quote
 ```
 
@@ -662,13 +666,13 @@ double_quote
 
 
 
-```c++
+```C++17
 // need to scape the " inside strings
 string line = "\"Oh no!\", Alice exclaimed, \"Bob's bike is broken!\""
 ```
 
 
-```c++
+```C++17
 line
 ```
 
@@ -680,7 +684,7 @@ line
 
 
 
-```c++
+```C++17
 cout << "how many back slashes will be printed? \\\\";
 ```
 
@@ -733,6 +737,6 @@ cout << "how many back slashes will be printed? \\\\";
 - looked into exercises and sample solutions on data types and variables
 
 
-```c++
+```C++17
 
 ```

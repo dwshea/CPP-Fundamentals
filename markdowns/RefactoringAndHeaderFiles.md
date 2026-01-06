@@ -1,5 +1,12 @@
 # Refactoring
 
+## External Resources
+- [Refactoring Guru](https://refactoring.guru/)
+- YouTube Podcast: [C++ Refactoring and Header Files](https://youtu.be/oBeeD9ZBldE)
+- YouTube Video: [C++ Refactoring and Header Files](https://youtu.be/MgsYHVGnqLI)
+- Learning Materials on NotebookLM: [Notebook LM Refactoring Resources](https://notebooklm.google.com/notebook/e1c0540b-b4a2-4eec-b631-dabfd8e6a25d)
+
+## What is Refactoring?
 - process of restructuring existing code without changing its external behavior
 - improves nonfunctional attributes of the software
 - intended to improve code readability and reduce complexity

@@ -9,6 +9,11 @@
 - the first program and its anatomy
 - errors and debugging
 
+## External Resources
+- [YouTube Podcast: Problems, Algorithms and Programs](https://youtu.be/NCCfHKIPNZQ)
+- [YouTube Video: Problems, Algorithms and Programs](https://youtu.be/998pUimnHr0)
+- [Notebook LM Learning Materials - Quiz, Flashcards and More](https://notebooklm.google.com/notebook/787ebd5b-8581-401e-bd35-c24b9f52d586)
+
 ## Computer science (CS) fundamentals
 - the core is a disciplined ability to be logical and creative in a pragmatic way to solve problems in varieties of disciplines
 - CS is a newer discipline that burrows from Mathematics, Engineering, and Natural Science
@@ -30,7 +35,7 @@
     - what is the sum of 9 and 999?
 - or can be as complicated as:
     - what is the shortest path from San Francisco, California to New York City, New York?
-- one must understand the problem, analyze the requirements, constrains and assumptions in order to correctly solve the problem
+- one must understand the problem, analyze the requirements, constraints and assumptions in order to correctly solve the problem
 
 ### Algorithm
 - once the problem is formulated and well analyzed, computer scientists work on algorithm

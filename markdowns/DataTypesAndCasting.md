@@ -54,6 +54,13 @@ str_val1
 ```
 
 
+
+
+    "1234"
+
+
+
+
 ```c++
 float float_num = 129.99f;
 string str_num1 = to_string(float_num);
@@ -65,6 +72,13 @@ str_num1
 ```
 
 
+
+
+    "129.990005"
+
+
+
+
 ```c++
 string str_val2 = to_string('A'); // uses ASCII value
 ```
@@ -73,6 +87,13 @@ string str_val2 = to_string('A'); // uses ASCII value
 ```c++
 str_val2
 ```
+
+
+
+
+    "65"
+
+
 
 ### Converting string values to numeric types
 - certain values can be converted into numeric types such as int, float, double, etc.
@@ -96,10 +117,24 @@ atoi("120")
 ```
 
 
+
+
+    120
+
+
+
+
 ```c++
 // extracting integer out from c-string literal
 atoi("43543 alphabets")
 ```
+
+
+
+
+    43543
+
+
 
 
 ```c++
@@ -108,10 +143,24 @@ atoi("text 123")
 ```
 
 
+
+
+    0
+
+
+
+
 ```c++
 // converting c-string literal to float
 atof("23.55")
 ```
+
+
+
+
+    23.550000
+
+
 
 
 ```c++
@@ -120,10 +169,24 @@ atof("132.68 text")
 ```
 
 
+
+
+    132.68000
+
+
+
+
 ```c++
 // can't extract from suffix
 atof("text 4546.454")
 ```
+
+
+
+
+    0.0000000
+
+
 
 ### Converting C++ strings into numeric types
 
@@ -159,6 +222,13 @@ float result = stoi(int_num) + stof(float_num);
 result
 ```
 
+
+
+
+    199.990f
+
+
+
 ### Type casting among numeric types
 - at times, you may need to convert integers to floating points and vice versa
 - use **int(value)** to convert float to int
@@ -172,9 +242,23 @@ int(10.99) // convert double to int; discard decimal points or round down
 ```
 
 
+
+
+    10
+
+
+
+
 ```c++
 int(345.567f) // discard decimal points or round down
 ```
+
+
+
+
+    345
+
+
 
 
 ```c++
@@ -182,14 +266,35 @@ float(19)
 ```
 
 
+
+
+    19.0000f
+
+
+
+
 ```c++
 double(3.33f) // convert float to double
 ```
 
 
+
+
+    3.3299999
+
+
+
+
 ```c++
 double(3)
 ```
+
+
+
+
+    3.0000000
+
+
 
 ### Type casting between char and int
 - use `char(intValue)` to convert ASCII `int` to `char`
@@ -201,9 +306,23 @@ char(65) // ASCII code to char
 ```
 
 
+
+
+    'A'
+
+
+
+
 ```c++
 int('A') // char to ASCII code
 ```
+
+
+
+
+    65
+
+
 
 ## Composition
 - similar to composing an essay or music
@@ -249,10 +368,14 @@ cout << "Enter length and width of a rectangle separated by space: ";
 cin >> rect_length >> rect_width;
 ```
 
+    Enter length and width of a rectangle separated by space: 
+
 
 ```c++
 cout << "Rectangle's length = " << rect_length << " and width = " << rect_width;
 ```
+
+    Rectangle's length = 10 and width = 5
 
 
 ```c++
@@ -260,6 +383,10 @@ cout << "Rectangle's length = " << rect_length << " and width = " << rect_width;
 cout << "area of the rectangle: " << rect_length * rect_width << endl;
 cout << "perimeter of the rectangle: " << 2*(rect_length+rect_width) << endl;
 ```
+
+    area of the rectangle: 50
+    perimeter of the rectangle: 30
+
 
 ### demo programs
 - see the complete program here [demos/stdio/rectangle/main.cpp](demos/stdio/rectangle/main.cpp)
@@ -297,6 +424,13 @@ quotient = 13; //start with the decimal 13
 ```
 
 
+
+
+    13
+
+
+
+
 ```c++
 // copy the quotient into dividend to divide it
 dividend = quotient;
@@ -308,17 +442,15 @@ answer = to_string(remain) + answer; // prepend remainder to answer
 // is quotient 0?
 ```
 
+    13/2 => quotient: 6 remainder: 1
 
-```c++
-// further divide quotient
-dividend = quotient;
-remain = dividend%divisor;
-quotient = dividend/divisor;
-// print intermediate results; help us see and plan further computation
-cout << dividend << '/' << divisor << " => quotient: " << quotient << " remainder: " << remain << endl;
-answer = to_string(remain) + answer; // prepend remainder to answer
-// is quotient 0?
-```
+
+
+
+
+    "1"
+
+
 
 
 ```c++
@@ -332,6 +464,16 @@ answer = to_string(remain) + answer; // prepend remainder to answer
 // is quotient 0?
 ```
 
+    6/2 => quotient: 3 remainder: 0
+
+
+
+
+
+    "01"
+
+
+
 
 ```c++
 // further divide quotient
@@ -343,12 +485,47 @@ cout << dividend << '/' << divisor << " => quotient: " << quotient << " remainde
 answer = to_string(remain) + answer; // prepend remainder to answer
 // is quotient 0?
 ```
+
+    3/2 => quotient: 1 remainder: 1
+
+
+
+
+
+    "101"
+
+
+
+
+```c++
+// further divide quotient
+dividend = quotient;
+remain = dividend%divisor;
+quotient = dividend/divisor;
+// print intermediate results; help us see and plan further computation
+cout << dividend << '/' << divisor << " => quotient: " << quotient << " remainder: " << remain << endl;
+answer = to_string(remain) + answer; // prepend remainder to answer
+// is quotient 0?
+```
+
+    1/2 => quotient: 0 remainder: 1
+
+
+
+
+
+    "1101"
+
+
 
 
 ```c++
 // stop division; display the answer
 cout << "13  decimal = " << answer << " binary " << endl;
 ```
+
+    13  decimal = 1101 binary 
+
 
 ### Above code as a complete C++ program
 
@@ -365,8 +542,3 @@ cout << "13  decimal = " << answer << " binary " << endl;
 - C++ provides various library functions to convert one type into another appropriate type
 - not every type of data can be converted into another type of data
 - composition helps solve bigger problems by breaking them into smaller ones and putting them together
-
-
-```c++
-
-```

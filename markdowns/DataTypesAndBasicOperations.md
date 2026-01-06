@@ -5,6 +5,11 @@
 - Operators for numbers and strings
 - Order of Precedence
 
+## External Resources
+
+- Operators and precedence rule: [https://en.cppreference.com/w/cpp/language/operator_precedence](https://en.cppreference.com/w/cpp/language/operator_precedence)
+- Arithmetic operators: [https://en.cppreference.com/w/cpp/language/operator_arithmetic](https://en.cppreference.com/w/cpp/language/operator_arithmetic)
+
 ## Operators
 - special symbols used to represent simple computations
     - like addition, multiplication, modulo, etc.
@@ -39,7 +44,7 @@
 - `+` symbol is used to add literal values or variables
 
 
-```python
+```C++17
 // adding literal integer values
 +1 + (-1)
 ```
@@ -52,7 +57,7 @@
 
 
 
-```python
+```C++17
 // adding literal floating points
 99.9 + 0.1
 ```
@@ -65,20 +70,20 @@
 
 
 
-```python
+```C++17
 // adding int variables
 int num1, num2, sum;
 ```
 
 
-```python
+```C++17
 num1 = 10;
 num2 = 5;
 sum = num1 + num2;
 ```
 
 
-```python
+```C++17
 sum
 ```
 
@@ -90,7 +95,7 @@ sum
 
 
 
-```python
+```C++17
 // adding float variables
 float n1 = 3.5;
 float n2 = 2.5;
@@ -98,7 +103,7 @@ float total = n1+n2;
 ```
 
 
-```python
+```C++17
 total
 ```
 
@@ -113,7 +118,7 @@ total
 - `-` symbol is used to subtract literal numbers or variables
 
 
-```python
+```C++17
 // subtracting literal integers
 10-1
 ```
@@ -126,7 +131,7 @@ total
 
 
 
-```python
+```C++17
 // subtracting literal floating points
 99.99 - 10.99
 ```
@@ -139,7 +144,7 @@ total
 
 
 
-```python
+```C++17
 // subtracting variables
 num1-num2
 ```
@@ -155,7 +160,7 @@ num1-num2
 - `/` symbol is used to divide literal numbers or variables
 
 
-```python
+```C++17
 // dividing literal integers
 10/2
 ```
@@ -168,7 +173,7 @@ num1-num2
 
 
 
-```python
+```C++17
 9/2 // integer division; remainder is discarded
 ```
 
@@ -180,7 +185,7 @@ num1-num2
 
 
 
-```python
+```C++17
 // dividing literal floats
 // if one of the operands is floating point number, C++ performs float division
 9.0/2
@@ -194,7 +199,7 @@ num1-num2
 
 
 
-```python
+```C++17
 // dividing numeric variables
 n1/n2
 ```
@@ -210,7 +215,7 @@ n1/n2
 - `*` asterick symbol is used to multiply literal numbers and variables
 
 
-```python
+```C++17
 // multiplying literal integers
 2*3
 ```
@@ -223,7 +228,7 @@ n1/n2
 
 
 
-```python
+```C++17
 // multiplying literatl floats
 2.5 * 2.0
 ```
@@ -236,7 +241,7 @@ n1/n2
 
 
 
-```python
+```C++17
 // multiplying numeric variables
 n1*n2
 ```
@@ -249,7 +254,7 @@ n1*n2
 
 
 
-```python
+```C++17
 // multiply integer by float literal
 3*7.9
 ```
@@ -266,7 +271,7 @@ n1*n2
 - only works on positive integers
 
 
-```python
+```C++17
 // // modulo or remainder operator
 // testing for even number
 4%2
@@ -280,7 +285,7 @@ n1*n2
 
 
 
-```python
+```C++17
 5%2 // testing for odd number
 ```
 
@@ -292,7 +297,7 @@ n1*n2
 
 
 
-```python
+```C++17
 10%11 // what's the remainder? Hint: can't divide 10 by 11
 ```
 
@@ -304,7 +309,7 @@ n1*n2
 
 
 
-```python
+```C++17
 12%11
 ```
 
@@ -316,21 +321,21 @@ n1*n2
 
 
 
-```python
+```C++17
 // expressions with variables and literals
 // declare some variables
 int hour, minute;
 ```
 
 
-```python
+```C++17
 // assign some values
 hour = 11;
 minute = 59;
 ```
 
 
-```python
+```C++17
 // Number of minutes since midnight
 hour * 60 + minute
 ```
@@ -343,7 +348,7 @@ hour * 60 + minute
 
 
 
-```python
+```C++17
 // Fraction of the hour that has passed
 minute/60
 ```
@@ -409,7 +414,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 #### bitwise left shift examples
 
 
-```python
+```C++17
 // convert 1 decimal to binary and shift left by 4 bits
 1 << 4 // same as 1*2*2*2*2; result is in decimal
 ```
@@ -428,7 +433,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 - $1 << 4$ = $000000000000000000000000000010000 = 2^4 = 16_{10}$
 
 
-```python
+```C++17
 3 << 4 // same as 3*2*2*2*2 or 3*2^4
 ```
 
@@ -447,7 +452,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 #### Bitwise right shit examples
 
 
-```python
+```C++17
 1024 >> 10 // same as 1024/2/2/2/2/2/2/2/2/2/2
 ```
 
@@ -466,7 +471,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 #### Bitwise NOT examples
 
 
-```python
+```C++17
 ~0 // Note: result shown is in decimal!
 ```
 
@@ -478,7 +483,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 ~1 // Note: 1 in binary using 32-bit width (31 0s and 1) 00000....1
 // result shown is in decimal
 ```
@@ -504,7 +509,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 #### Bitwise AND examples
 
 
-```python
+```C++17
 1 & 1
 ```
 
@@ -516,7 +521,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 1 & 0
 ```
 
@@ -528,7 +533,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 0 & 1
 ```
 
@@ -540,7 +545,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 0 & 0
 ```
 
@@ -554,7 +559,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 #### Bitwise OR examples
 
 
-```python
+```C++17
 1 | 1
 ```
 
@@ -566,7 +571,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 1 | 0
 ```
 
@@ -578,7 +583,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 0 | 1
 ```
 
@@ -590,7 +595,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 0 | 0
 ```
 
@@ -604,7 +609,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 #### Bitwise XOR examples
 
 
-```python
+```C++17
 1 ^ 1
 ```
 
@@ -616,7 +621,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 1 ^ 0
 ```
 
@@ -628,7 +633,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 0 ^ 1
 ```
 
@@ -640,7 +645,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 0 ^ 0
 ```
 
@@ -666,7 +671,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 - when in doubt, use parenthesis!
 
 
-```python
+```C++17
 // computation is similar to what we know from Elementary Math
 2+3*4/2-2
 ```
@@ -679,7 +684,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 // same as
 (2+((3*4)/2))-2
 ```
@@ -692,7 +697,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 (2+3)*4/(2-1) // Note: must use * to multiply after ( )
 ```
 
@@ -704,7 +709,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 // typical mistake
 (2+3)4/(2-1) // error
 ```
@@ -727,7 +732,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
     - **coercion** is safe when data is not lost, e.g. converting int to float or double
 
 
-```python
+```C++17
 'a'+1 // a -> 97
 ```
 
@@ -739,7 +744,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 'A'-1 // A -> 65
 ```
 
@@ -751,7 +756,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 'A'*10
 ```
 
@@ -763,7 +768,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 'A'/10
 ```
 
@@ -775,7 +780,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 
 
 
-```python
+```C++17
 'A'+'A'
 ```
 
@@ -792,7 +797,7 @@ bitwise XOR | ^ |	caret | x ^ y |	each bit in x XOR each bit in y |
 - `+` : concatenates or joins two strings giving a new longer string
 
 
-```python
+```C++17
 // variables can be declared and intitialized at the same time
 #include <iostream>
 #include <string>
@@ -805,7 +810,7 @@ string fullName = fName + space + lName;
 ```
 
 
-```python
+```C++17
 fullName
 ```
 
@@ -817,7 +822,7 @@ fullName
 
 
 
-```python
+```C++17
 pi
 ```
 
@@ -835,25 +840,25 @@ pi
     - use same radius $10.5$ and compare the results provided below
 
 
-```python
+```C++17
 // preprocessor directive to declare a named constant
 #define PI 3.141592653589793238
 ```
 
 
-```python
+```C++17
 const double pi = 22/7;
 ```
 
 
-```python
+```C++17
 // let's use constants
 double radius = 10.5;
 double area_of_circle = PI*radius*radius;
 ```
 
 
-```python
+```C++17
 // value of area of circle
 area_of_circle
 ```
@@ -866,7 +871,7 @@ area_of_circle
 
 
 
-```python
+```C++17
 pi*radius*radius
 ```
 
@@ -917,8 +922,3 @@ pi*radius*radius
 - only appropriate operations can be applied to given data
 - data must be casted to correct type before applying the basic operations
     - you'll learn this in Data Types and Casting chapter
-
-
-```python
-
-```

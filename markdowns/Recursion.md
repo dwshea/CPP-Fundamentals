@@ -261,8 +261,3 @@ moveDisks(3, 'A', 'B', 'C');
 - Watch Out For Those Hailstones! -  https://open.kattis.com/problems/hailstone
 - Out of Sorts - https://open.kattis.com/problems/outofsorts
     - Hint: implement recursive binary search and apply to the generated unsorted sequence
-
-
-```C++17
-
-```

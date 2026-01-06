@@ -6,6 +6,9 @@
 - reading data from keyboard
 - composing programs
 
+## External Resources
+- Basic Input and Output in C++: [https://cplusplus.com/doc/tutorial/basic_io/](https://cplusplus.com/doc/tutorial/basic_io/)
+
 ## Input and output (IO)
 - IO operations are fundamental to computer programs
 - C++ IO occurs in streams (sequence of bytes)
