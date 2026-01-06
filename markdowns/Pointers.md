@@ -1,5 +1,7 @@
 # Pointers
-http://www.cplusplus.com/doc/tutorial/pointers/
+
+## External Resources
+- Pointers - [http://www.cplusplus.com/doc/tutorial/pointers/](http://www.cplusplus.com/doc/tutorial/pointers/)
 
 ## Topics
 - Computer Memory (RAM)
@@ -8,7 +10,7 @@ http://www.cplusplus.com/doc/tutorial/pointers/
 - Dynamic memory (Heap)
 - Function pointers
 
-## Headers
+### Header and Helper Functions
 - run include headers and helper function cells if Kernel crashes or is restarted
 - you do not need to include any special header to use pointers
 
@@ -36,7 +38,7 @@ using namespace std;
 
 <a id="pointers"></a>
 
-## Pointers
+## What are Pointers?
 - special variables that can store physical memory addresses identifiers (variables and functions)
 - variables represent values and are used interchangebly
 - pointers represent memory addresses and are used interchangebly
