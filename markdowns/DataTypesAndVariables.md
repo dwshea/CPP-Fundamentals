@@ -14,6 +14,9 @@
 ## External Resources
 - Variables and Data Types in C++: [https://cplusplus.com/doc/tutorial/variables/](https://cplusplus.com/doc/tutorial/variables/)
 - C++ Data Types: [https://en.cppreference.com/w/cpp/language/types](https://en.cppreference.com/w/cpp/language/types)
+- YouTube Video - C++ Data Types and Variables: [https://youtu.be/r35nqBjxGDQ](https://youtu.be/r35nqBjxGDQ)
+- YouTube Podcast - C++ Data Types and Variables: [https://youtu.be/3kYujfD0KTA](https://youtu.be/3kYujfD0KTA)
+- NotebookLM learning materials: [https://notebooklm.google.com/notebook/22d7e69d-b42b-4d09-b285-59234a587d3b](https://notebooklm.google.com/notebook/22d7e69d-b42b-4d09-b285-59234a587d3b)
 
 ## Data and values
 - data and values are the fundamentals to any computer language and program

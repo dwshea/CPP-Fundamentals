@@ -1,12 +1,31 @@
-# Memory segments
+# Computer Hadware and Software Fundamentals
+- understanding how computer hardware and software work together is crucial for any programmer
+- this knowledge helps you write efficient code, debug issues, and optimize performance
 
-### Table of Contents
-- [Memory segments](#segments)
-- [Demo program](#demo1)
+## Computer Hardware
+- **Central Processing Unit (CPU)**: the brain of the computer that executes instructions
+- **Memory (RAM)**: temporary storage for data and instructions that the CPU needs while executing
+- **Storage (HDD/SSD)**: long-term/secondary storage for data and programs
+- **Input/Output Devices**: peripherals like keyboard, mouse, monitor, joystick, stylus, etc.
+- **Motherboard**: the main circuit board that connects all hardware components
+- **Bus**: a communication system that transfers data between components inside a computer
+- **Cache**: a smaller, faster type of volatile memory that provides high-speed data access to the CPU
+- **Registers**: small storage locations within the CPU that hold data temporarily during processing
+## Computer Software
+- **Operating System (OS)**: manages hardware resources and provides services for computer programs
+- **Application Software**: programs that perform specific tasks for users (e.g., web browsers, word processors)
+- **System Software**: software that provides core functions like OS, utilities, and device drivers
+- **Firmware**: low-level software programmed into hardware devices to control their functions
+- **Compilers/Interpreters**: tools that translate high-level programming languages into machine code
+- **Libraries**: collections of pre-written code that developers can use to optimize tasks and improve efficiency
+- **APIs (Application Programming Interfaces)**: sets of protocols and tools for building software applications and enabling communication between different software components
+
 
 <a id="segments"></a>
 
-## Memory segments in C/C++ programs
+# Primary Memory segments in C/C++ programs
+
+- a program's memory is divided into different segments to store different types of data
 - main memory (RAM) is typically divided into 2 main spaces:
     1. kernel space - reserved for running the kernel (OS background processes, device drivers, etc.)
         - loaded in lower addresses
@@ -51,7 +70,7 @@ Programmers primarily focus on the heap and the stack, as that is where most of 
 - `size` command can be used to display the size of various segments in the compiled executable.
 
 
-```python
+```C++14
 ! cat demos/memory/memory_segments.cpp
 ```
 
@@ -95,12 +114,12 @@ Programmers primarily focus on the heap and the stack, as that is where most of 
     }
 
 
-```python
+```C++14
 ! g++ demos/memory/memory_segments.cpp -o memory_segments.exe
 ```
 
 
-```python
+```C++14
 ! ./memory_segments.exe
 ```
 
@@ -126,7 +145,7 @@ Programmers primarily focus on the heap and the stack, as that is where most of 
 
 
 
-```python
+```C++14
 
 ! size -m -l memory_segments.exe
 ```
@@ -152,7 +171,7 @@ Programmers primarily focus on the heap and the stack, as that is where most of 
 
 
 
-```python
+```C++14
 ! man size
 ```
 
@@ -203,8 +222,3 @@ Programmers primarily focus on the heap and the stack, as that is where most of 
     
     Apple Computer, Inc.             July 28, 2005                         SIZE(1)
 
-
-
-```python
-
-```
