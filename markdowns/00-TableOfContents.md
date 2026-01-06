@@ -1,7 +1,6 @@
 # C++ Fundamentals
 
 ## Contents
-
 - [**Introduction**](./Introduction.ipynb)
 - [**Project Organization, Code Refactoring & Header Files**](./RefactoringAndHeaderFiles.ipynb)
 - [**Data, Types and Variables**](./DataTypesAndVariables.ipynb)
@@ -34,7 +33,6 @@
 - [**Union Datastructure**](./Unions.ipynb)
 
 ## Miscellaneous
-
 - [**Dev Environment & Setup**](./DevEnvironmentSetup.ipynb)
 - [**Makefile**](./Makefile.ipynb)
 - [**Jupyter Notebook & Setup**](./JupyterNotebookSetup.ipynb)

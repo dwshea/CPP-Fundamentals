@@ -29,7 +29,7 @@
     - functions recursively reduce themselves to one of the base case(s)
 
 
-```c++
+```C++17
 #include <iostream>
 #include <thread>
 #include <chrono>
@@ -39,7 +39,7 @@ using namespace std;
 ```
 
 
-```c++
+```C++17
 // Recursively print countdown from 10-1 and blast off!
 void countDown(int n) 
 {
@@ -56,7 +56,7 @@ void countDown(int n)
 ```
 
 
-```c++
+```C++17
 countDown(10);
 ```
 
@@ -83,7 +83,7 @@ countDown(10);
 ```
 
 
-```c++
+```C++17
 long first_sum(int n) 
 {
     if (n == 1) { // base case
@@ -95,7 +95,7 @@ long first_sum(int n)
 ```
 
 
-```c++
+```C++17
 cout << "Sum of first 10 positive integers is: " << first_sum(100) << endl;
 ```
 
@@ -116,13 +116,13 @@ fib(n) = fib(n-1) + fib(n-2) for n >= 2  (general case)
 ```
 
 
-```c++
+```C++17
 // Finding Fibonacci number in series
 int fib_count = 0;
 ```
 
 
-```c++
+```C++17
 
 long fib(unsigned int n)
 {
@@ -137,7 +137,7 @@ long fib(unsigned int n)
 ```
 
 
-```c++
+```C++17
 cout << fib(32) << endl;
 ```
 
@@ -145,7 +145,7 @@ cout << fib(32) << endl;
 
 
 
-```c++
+```C++17
 cout << "Fibonacci function was called " << fib_count << " times." << endl;
 ```
 
@@ -163,12 +163,12 @@ cout << "Fibonacci function was called " << fib_count << " times." << endl;
     - 1.6180 is also called **golden ratio**
 
 
-```c++
+```C++17
 size_t fib_count_tail = 0;
 ```
 
 
-```c++
+```C++17
 // Tail Recursive Fibonacci optimized version
 long fib_tail(unsigned int n, long a, long b)
 {
@@ -182,7 +182,7 @@ long fib_tail(unsigned int n, long a, long b)
 ```
 
 
-```c++
+```C++17
 cout << fib_tail(32, 0, 1) << endl;
 ```
 
@@ -190,7 +190,7 @@ cout << fib_tail(32, 0, 1) << endl;
 
 
 
-```c++
+```C++17
 cout << "fib_tail function was called " << fib_count_tail << " times." << endl;
 ```
 
@@ -229,7 +229,7 @@ Write a program that simulates the steps required to solve the "Tower of Hanoii"
     3. Move the top n - 1 disks from needle 2 (helper) to needle 3 (dest), using needle 1 (src) as the intermediate needle
 
 
-```c++
+```C++17
 void moveDisks(int n, char src, char helper, char dst) {
     if (n > 0) {
         moveDisks(n-1, src, dst, helper);
@@ -240,7 +240,7 @@ void moveDisks(int n, char src, char helper, char dst) {
 ```
 
 
-```c++
+```C++17
 moveDisks(3, 'A', 'B', 'C');
 ```
 
@@ -263,6 +263,6 @@ moveDisks(3, 'A', 'B', 'C');
     - Hint: implement recursive binary search and apply to the generated unsorted sequence
 
 
-```c++
+```C++17
 
 ```
