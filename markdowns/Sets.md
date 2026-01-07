@@ -1,9 +1,14 @@
-# Sets
+# Sets - Associative Containers
+
+External Resources
+- C++ Reference for Set Associative Containers: [https://en.cppreference.com/w/cpp/container.html](https://en.cppreference.com/w/cpp/container.html)
+- NotebookLM learning materials - [https://notebooklm.google.com/notebook/d0b8dfd3-cbf9-4808-8dd5-07b2870b1eb1](https://notebooklm.google.com/notebook/d0b8dfd3-cbf9-4808-8dd5-07b2870b1eb1)
 
 ## Ordered Set
-- https://www.cppreference.com/w/cpp/container/set.html
+- Documentation: [https://www.cppreference.com/w/cpp/container/set.html](https://www.cppreference.com/w/cpp/container/set.html)
 - A collection of unique elements, sorted by their values. It provides fast search, insertion, and deletion operations.
 - Sets are usually implemented as `Red–black trees`
+- 
 - Example usage:
 
 
