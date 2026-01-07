@@ -1,4 +1,4 @@
-# Structures
+# Data Structures
 
 ## Topics
 - compound and heterogeneous types
@@ -9,7 +9,12 @@
 - array of structures
 - structures in another structures
 
+## External Resources
+
+- Data Structures Tutorial - [https://cplusplus.com/doc/tutorial/structures/](https://cplusplus.com/doc/tutorial/structures/)
+
 ## Compound and heterogeneous types
+
 - most of the data types we've worked with so far represent a single value
     - an interger, floating-point value, char, etc.
 - we've also worked with array of similar values such as string, array of integers or array of strings
@@ -18,7 +23,7 @@
 - e.g. Complex numbers, Points in coordinates, various records (student records, police records, etc.)
 - a large number of these types are compound but mixture of **heteregenous (mixed) types**
     - e.g. student records may have integer for ID, string for names and addresses, float for GPA and grades, etc.
-- the following figure shows some sample student records that a program may have to represent:
+- the following figure shows some sample student records in a spreadsheet document that a program may have to represent:
 
 ![](assets/records.png)
 

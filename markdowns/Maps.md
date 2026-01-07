@@ -1,6 +1,8 @@
-# Maps
+# Maps - Associative Containers
 
-https://en.cppreference.com/w/cpp/container/map
+## External Resources
+- C++ Reference for Map Associative Containers [https://en.cppreference.com/w/cpp/container.html](https://en.cppreference.com/w/cpp/container.html)
+- NotebookLM learning materials - [https://notebooklm.google.com/notebook/6afcc53d-54f3-43e1-9f76-0cb9f71b19b1](https://notebooklm.google.com/notebook/6afcc53d-54f3-43e1-9f76-0cb9f71b19b1)
 
 ## Topics
 - Map definition
@@ -14,7 +16,8 @@ https://en.cppreference.com/w/cpp/container/map
 
 
 ## Map
-- the containers such as **array** and **vector** are linear and the keys are fixed integer indices
+- in previous chapters we have seen various sequence containers such as **array**, **vector**, **deque**, **list**, etc.
+- those containers are linear and the keys are fixed integer indices or positions specifying the location of elements in the container
 - at times problems may require a dictionary like data-structure where you need to select your own key that is associated with some value
 - **map** is such a data structure where you store key-value pairs of your choosen types
 - **map** is also called associative container that contains key-value pairs with unique keys
@@ -23,7 +26,7 @@ https://en.cppreference.com/w/cpp/container/map
     - key and value can be of the same type or can be different types
 - the following figure depicts a map data structure that maps English numbers (string) to Spanish numbers (string)
 
-![](resources/Map.png)
+![](assets/Map.png)
 
 - keys are mapped to values (one-way)
     - values are not mapped to the keys

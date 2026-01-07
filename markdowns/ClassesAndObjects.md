@@ -1,5 +1,11 @@
 # Classes and Objects
 
+## External Resources
+- Classes I - [https://cplusplus.com/doc/tutorial/classes/](https://cplusplus.com/doc/tutorial/classes/)
+- Classes II - [https://cplusplus.com/doc/tutorial/templates/](https://cplusplus.com/doc/tutorial/templates/)
+
+## Object Oriented Programming (OOP) Concepts
+
 - OOP (Object Oriented Programming) is a programming paradigm that uses "objects" to design software.
 - A class is a blueprint for creating objects.
 - An object is an instance of a class.
