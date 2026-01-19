@@ -7,7 +7,6 @@
 ## PDF format
 
 - pdf of each jupyter notebook chapter can be found in [pdfs](https://github.com/rambasnet/CPPFundamentals-Notebooks/tree/master/pdfs) folder
-- pdfs of lecture notes can be found in [notes](https://github.com/rambasnet/CPP-Fundamentals/tree/master/notes) folder
 
 ## Who can use this content
 
